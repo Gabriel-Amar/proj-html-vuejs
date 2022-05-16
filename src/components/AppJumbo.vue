@@ -31,6 +31,7 @@ span, button{
     font-family: $jb-family;
 }
 button{
-    margin-top: 120px;
+    margin-top: 140px;
+    padding: 16px 48px !important;
 }
 </style>
