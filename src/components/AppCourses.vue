@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <h2 class="text-center fw-bold ">
+        <h2 class="text-center fw-bold py-3">
             Recent Courses
         </h2>
-        <p class="text-center p-title py-5">
+        <p class="text-center p-title ">
             Whether you're consideringafoundation course or an undergraduate degree master's
             oraPhD, academics isaplace where students thrive.
         </p>
@@ -49,10 +49,10 @@
             </div>
             <div class="col-6 shadow">
                 <h2 class="upcoming">Upcoming Events</h2>
-                <p class="py-3">Princeton offers admission information sessions and student-led tours to campus visitors</p>
+                <p class="py-3 margin">Princeton offers admission information sessions and student-led tours to campus visitors</p>
                 <p class="py-3">Learn more ></p>
                 <p class="py-3">Admission information sessions and student-led tours to campus visitors</p>
-                <p class="py-3">Learn more ></p>
+                <p class="py-3 margine">Learn more ></p>
             </div>
         </div>
     </div>
@@ -118,6 +118,12 @@ i{
     padding: 30px;
     font-size: 40px;
     border-radius: 50%;
+}
+.margin{
+    margin-top: 50px;
+}
+.margine{
+    margin-bottom: 110px;
 }
 </style>
 
