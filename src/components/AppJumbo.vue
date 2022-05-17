@@ -34,4 +34,8 @@ button{
     margin-top: 140px;
     padding: 16px 48px !important;
 }
+button:hover{
+    background-color: $ac-salmon !important;
+    border-color: $ac-salmon !important;
+}
 </style>

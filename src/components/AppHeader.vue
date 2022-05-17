@@ -7,7 +7,7 @@
     </a>
     <ul>
       <li v-for="(item,index) in links" :key="index">
-        {{item.testo}}
+        <a href="#">{{item.testo}}</a>
       </li>
     </ul>
   </div>
@@ -54,6 +54,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/general.scss";
+@import "../assets/style/vars.scss";
 
 nav{
   ul {
@@ -77,4 +78,32 @@ img{
   top: 0;
   z-index: 99999;
 }
+li{
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0%;
+  position: absolute;
+  background: $ac-salmon;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+a{
+  color: $ac-black;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+
+
 </style>

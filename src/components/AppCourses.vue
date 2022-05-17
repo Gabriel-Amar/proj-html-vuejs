@@ -10,7 +10,7 @@
         <div class="row py-5">
             <div class="col-4">
                 <div class="card border-0">
-                        <img src="../assets/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" class="card-img-top " alt="Online Coaching logo">
+                        <img src="../assets/img/bruce-mars-FWVMhUa_wbY-unsplash.jpg" class="card-img-top  kenburns-top" alt="Online Coaching logo">
                     <div class="card-body">
                         <p>Free</p>
                         <h5 class="card-title">UI Animation using Sketch 3, Principle App, and Flinto</h5>
@@ -20,7 +20,7 @@
             </div>
             <div class="col-4">
                 <div class="card border-0">
-                        <img src="../assets/img/course-1-2.jpg" class="card-img-top " alt="Online Coaching logo">
+                        <img src="../assets/img/course-1-2.jpg" class="card-img-top  kenburns-top" alt="Online Coaching logo">
                     <div class="card-body">
                         <p>Free</p>
                         <h5 class="card-title">The Ultimate Drawing Course Beginner to Advanced</h5>
@@ -30,7 +30,7 @@
             </div>
             <div class="col-4">
                 <div class="card border-0">
-                        <img src="../assets/img/william-thomas-ny6tO4ItOEY-unsplash.jpg" class="card-img-top " alt="Online Coaching logo">
+                        <img src="../assets/img/william-thomas-ny6tO4ItOEY-unsplash.jpg" class="card-img-top  kenburns-top" alt="Online Coaching logo">
                     <div class="card-body">
                         <p>Free</p>
                         <h5 class="card-title">Your Complete Guide to Photography</h5>
@@ -125,5 +125,7 @@ i{
 .margine{
     margin-bottom: 110px;
 }
+.card:hover .kenburns-top{animation:kenburns-top 1s ease-out both}
+@keyframes kenburns-top{0%{transform:scale(1) translateY(0);transform-origin:50% 16%}100%{transform:scale(1.25) translateY(-15px);transform-origin:top}}
 </style>
 

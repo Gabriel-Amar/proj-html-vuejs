@@ -5,8 +5,8 @@
         </h2>
         <div class="row">
             <div class="col-4">
-                <div class="card border-0 p-5">
-                        <img src="../assets/img/svg-0.svg" class="card-img-top " alt="Online Coaching logo">
+                <div class="card border-0 p-5 slide-top">
+                        <img src="../assets/img/svg-0.svg" class="card-img-top" alt="Online Coaching logo">
                     <div class="card-body text-center">
                         <h5 class="card-title">Online Coaching</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas corporis odio veritatis tempora. Libero, alias velit?</p>
@@ -14,8 +14,8 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card border-0 p-5">
-                        <img src="../assets/img/svg-1.svg" class="card-img-top " alt="Online Coaching logo">
+                <div class="card border-0 p-5 slide-top">
+                        <img src="../assets/img/svg-1.svg" class="card-img-top" alt="Online Coaching logo">
                     <div class="card-body text-center">
                         <h5 class="card-title">Consultation</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas corporis odio veritatis tempora. Libero, alias velit?</p>
@@ -23,8 +23,8 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="card border-0 p-5">
-                        <img src="../assets/img/svg-2.svg" class="card-img-top " alt="Online Coaching logo">
+                <div class="card border-0 p-5 slide-top">
+                        <img src="../assets/img/svg-2.svg" class="card-img-top" alt="Online Coaching logo">
                     <div class="card-body text-center">
                         <h5 class="card-title">Life Programs</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas corporis odio veritatis tempora. Libero, alias velit?</p>
@@ -103,6 +103,7 @@ img{
     font-family: $num-family;
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: default;
 }
 .students{
         background-position: 16px;
@@ -110,6 +111,17 @@ img{
 .text{
     font-weight: 500;
 }
+.colored:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.slide-top:hover{animation:slide-top .5s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes slide-top{0%{transform:translateY(0)}100%{transform:translateY(-20px)}}
+
+.card:hover .card-title{
+    color: $ac-salmon;
+} 
+
 </style>
 
 
