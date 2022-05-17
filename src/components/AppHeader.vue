@@ -2,9 +2,9 @@
   <div>
     <nav class="navbar navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand" href="#">
+    <div class="navbar-brand" href="#">
       <img src="../assets/img/Logo.jpg" alt="Academy logo" class="d-inline-block align-text-top">
-    </a>
+    </div>
     <ul>
       <li v-for="(item,index) in links" :key="index">
         <a href="#">{{item.testo}}</a>
@@ -87,15 +87,15 @@ a:after {
   content: "";
   display: block;
   height: 2px;
-  left: 0%;
+  right: 0%;
   position: absolute;
   background: $ac-salmon;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 a:hover:after { 
-  width: 100%; 
-  left: 0; 
+  width: 50%; 
+  right: 0; 
 }
 a{
   color: $ac-black;
