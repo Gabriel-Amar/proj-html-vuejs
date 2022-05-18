@@ -134,6 +134,7 @@ export default {
         background-color: $ac-blue;
         background-repeat: no-repeat;
         height: 550px;
+        margin-top: -16px;
         background-position: center;
         background-size: cover;
         
