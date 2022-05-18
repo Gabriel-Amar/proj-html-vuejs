@@ -121,7 +121,9 @@ img{
 .card:hover .card-title{
     color: $ac-salmon;
 } 
-
+.card{
+    cursor: pointer;
+}
 </style>
 
 

@@ -1,8 +1,8 @@
 <template>
     <div>
         <img src="../assets/img/02_Landing-Page.jpg" alt="">
-        <span>Professional Development For Coaches And Leaders</span>
-        <button type="button" class="btn btn-outline-dark rounded-0">Learn More</button>
+        <span class="" >Professional Development For Coaches And Leaders</span>
+        <button type="button" class="btn btn-outline-dark rounded-0 ">Learn More</button>
     </div>
 </template>
 
@@ -26,7 +26,7 @@ span, button{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: $jb-size;
+    font-size: 3rem;
     text-align: center;
     font-family: $jb-family;
 }
@@ -38,4 +38,5 @@ button:hover{
     background-color: $ac-salmon !important;
     border-color: $ac-salmon !important;
 }
+
 </style>

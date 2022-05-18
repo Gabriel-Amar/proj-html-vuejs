@@ -1,5 +1,6 @@
 //BOOTSTRAP
 @import "~bootstrap/scss/bootstrap.scss";
+@import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 //FONTAWESOME
 $fa-font-path: "@/webfonts";
@@ -7,3 +8,7 @@ $fa-font-path: "@/webfonts";
 @import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
 @import "@fortawesome/fontawesome-free/scss/regular.scss";
+
+body{
+    min-width: 992px;
+}
