@@ -37,7 +37,7 @@
                 <span class="students">
                     6500 + 
                 </span>
-                <span class="text">
+                <span class="text px-2">
                     Students
                 </span>
             </div>
@@ -45,7 +45,7 @@
                 <span class="courses">
                     200 + 
                 </span>
-                <span class="text">
+                <span class="text px-2">
                     Online Courses
                 </span>
             </div>
@@ -53,7 +53,7 @@
                 <span class="happy">
                     99 %
                 </span>
-                <span class="text">
+                <span class="text px-2">
                     Happy Clients
                 </span>
             </div>

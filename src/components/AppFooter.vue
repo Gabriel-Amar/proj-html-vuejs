@@ -12,17 +12,18 @@
                 <div class="col-lg-8 p-5">
                     <div class="text ">
                         <p class="color"> <span class="colored">Insights is Picwik </span> University's thought leadership publication for sharing knowledge on management,technology and innovation.</p>
-                        <p class="text-light">Take me there ></p>
+                        <p class="text-light colore">Take me there ></p>
                     </div>
                 </div>
             </div>
             
         <section>
             <h2>Contact Us</h2>
-            <ul>
+            <ul >
                 <li v-for="(item, index) in links1" :key="index">
-                    
-                    {{item.testo}}
+                    <div class="slide-right">
+                        <span >{{item.testo}}</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -31,7 +32,9 @@
             <h2>Support Us</h2>
             <ul>
                 <li v-for="(item, index) in links2" :key="index">
-                    {{item.testo}}
+                    <div class="slide-right">
+                        <span >{{item.testo}}</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -40,7 +43,9 @@
             <h2>Explore</h2>
             <ul>
                 <li v-for="(item, index) in links3" :key="index">
-                    {{item.testo}}
+                    <div class="slide-right">
+                        <span >{{item.testo}}</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -49,7 +54,9 @@
             <h2>Visit</h2>
             <ul>
                 <li v-for="(item, index) in links4" :key="index">
-                    {{item.testo}}
+                    <div class="slide-right">
+                        <span >{{item.testo}}</span>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -64,61 +71,61 @@ export default {
         return{
             links1:[
                 {
-                    testo: "900 Wood Street, MI New York 48607",
+                    testo: "> 900 Wood Street, MI New York 48607",
                 },
                 {
-                    testo: "+56 345 678 000-09",
+                    testo: "> +56 345 678 000-09",
                 },
                 {
-                    testo: "info@example.com",
+                    testo: "> info@example.com",
                 },
             ],
             links2:[
                 {
-                    testo: "Privacy",
+                    testo: "> Privacy",
                 },
                 {
-                    testo: "Terms",
+                    testo: "> Terms",
                 },
                 {
-                    testo: "Cookie Policy",
+                    testo: "> Cookie Policy",
                 },
                 {
-                    testo: "Sitemap",
+                    testo: "> Sitemap",
                 },
             ],
             links3:[
                 {
-                    testo: "Accomodation"
+                    testo: "> Accomodation"
                 },
                 {
-                    testo: "Arts Academics"
+                    testo: "> Arts Academics"
                 },
                 {
-                    testo: "Central Services"
+                    testo: "> Central Services"
                 },
                 {
-                    testo: "Conferences and Evens"
+                    testo: "> Conferences and Evens"
                 },
                 {
-                    testo: "Food and Drinks"
+                    testo: "> Food and Drinks"
                 },
             ],
             links4:[
                 {
-                    testo: "Admission"
+                    testo: "> Admission"
                 },
                 {
-                    testo: "Contact Us"
+                    testo: "> Contact Us"
                 },
                 {
-                    testo: "FAQs"
+                    testo: "> FAQs"
                 },
                 {
-                    testo: "Request Information"
+                    testo: "> Request Information"
                 },
                 {
-                    testo: "Privaacy Notice"
+                    testo: "> Privaacy Notice"
                 },
             ]
         }
@@ -156,9 +163,7 @@ export default {
         color: $ac-white;
         margin-bottom: 20px;
     }
-    li:before{
-      content: ">";
-    }
+    
     ul{
       padding: 0 !important;
       list-style-type: none;
@@ -188,4 +193,13 @@ export default {
             box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
 
     }
+    .colore:hover{
+        color: $ac-salmon !important;
+        cursor: pointer;
+    }
+    
+
+    .slide-right:hover{animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both}
+
+    @keyframes slide-right{0%{transform:translateX(0)}100%{transform:translateX(10px)}}
 </style>

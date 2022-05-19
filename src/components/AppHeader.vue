@@ -1,21 +1,33 @@
 <template>
   <div>
     <nav class="navbar navbar-light bg-light">
-  <div class="container">
+  <div class="container ">
     <div class="navbar-brand" href="#">
       <img src="../assets/img/Logo.jpg" alt="Academy logo" class="d-inline-block align-text-top">
     </div>
     <ul>
+      <b-dropdown id="dropdown-1"  size="sm" text="Dropdown" variant="transparent" class="fw-bold">
+    <b-dropdown-item>First Action</b-dropdown-item>
+    <b-dropdown-item>Second Action</b-dropdown-item>
+    <b-dropdown-item>Third Action</b-dropdown-item>
+  </b-dropdown>
       <li v-for="(item,index) in links" :key="index">
         <a href="#">{{item.testo}}</a>
       </li>
     </ul>
+
+
+    
   </div>
 </nav>
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 export default {
   name: 'AppHeader',
   data(){
@@ -56,6 +68,7 @@ export default {
 @import "../assets/style/general.scss";
 @import "../assets/style/vars.scss";
 
+
 nav{
   ul {
   display: flex;
@@ -63,6 +76,7 @@ nav{
   padding: 10px;
   list-style-type: none;
   gap: 30px;
+  align-items: center;
   cursor: pointer;
   font-weight: bold;
   }
@@ -104,6 +118,5 @@ a{
 a:hover{
   color: black;
 }
-
 
 </style>
